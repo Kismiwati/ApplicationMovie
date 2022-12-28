@@ -5,7 +5,8 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-//bagain ini adalah Class MovieDetails yang digunakan untuk memparsing reponse json yang diterima dari request api
+//bagain ini adalah Class MovieDetails
+// yang digunakan untuk memparsing reponse json yang diterima dari request api
 data class MovieDetails(
     val id: Int,
     val adult: Boolean,

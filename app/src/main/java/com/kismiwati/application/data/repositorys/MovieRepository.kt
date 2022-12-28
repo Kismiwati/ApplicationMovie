@@ -9,6 +9,8 @@ import retrofit2.Call
 
 class MovieRepository(private val movieClient: IClientMovie) : IMovieRepository {
     override suspend fun getMovies(): Call<MovieResponse> {
+        //memindahkan eksekusi coroutine ke operator I/O
+        //digunakan untuk memblokir kode permintaan jaringan
         return withContext(Dispatchers.IO) {
             movieClient.getBreeds()
         }

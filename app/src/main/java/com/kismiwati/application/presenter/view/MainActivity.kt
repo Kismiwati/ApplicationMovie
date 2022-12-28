@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     private val movieFactory = MovieViewModelFactory(movieRepository)
     private val movieViewModel by viewModels<MovieViewModel> { movieFactory }
 
+    //bagina ini untuk membuat variabel binding
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }

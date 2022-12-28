@@ -15,6 +15,7 @@ import com.kismiwati.application.presenter.viewmodel.MovieDetailsViewModelFactor
 //bagian ini adalah class MovieDetailsActivity
 class MovieDetailsActivity : AppCompatActivity() {
 
+    //bagina ini untuk membuat variabel binding
     private val binding by lazy {
         ActivityMovieDetailsBinding.inflate(layoutInflater)
     }
