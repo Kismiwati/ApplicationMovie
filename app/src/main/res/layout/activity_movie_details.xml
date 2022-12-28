@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/movie_poster"
+        android:layout_width="414dp"
+        android:layout_height="437dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/movie_poster"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Bernese Mountain Dog"
+        android:contentDescription="@string/movie_name"
+        app:layout_constraintTop_toBottomOf="@id/movie_poster"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+
+
+    <RatingBar
+        android:id="@+id/movie_voto"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/movie_rating"
+        android:progressTint="#FFD65A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_name" />
+
+    <TextView
+        android:id="@+id/movie_descrition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/movie_descrition"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_voto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

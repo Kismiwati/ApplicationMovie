@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aplikasi Film</string>
+    <string name="movie_data">%s | %s</string>
+    <string name="movie_name">Nome do Filme</string>
+    <string name="movie_poster">Poster do filme</string>
+    <string name="movie_descrition">Descrição do Filme</string>
+    <string name="movie_rating">Avaliação do Filme</string>
+    <string name="title_favoritos">Filmes Favoritos</string>
+    <string name="splash_text">Fique por dentro dos filmes \n tendências da semana.</string>
+</resources>
